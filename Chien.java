@@ -22,26 +22,37 @@ public class Chien {
   }
 
   /**
+   * @return la race du chien
+   **/
+  public String getRace() {
+    return this.race;
+  }
+
+  /**
+   * @return la couleur du chien
+   **/
+  public String getCouleur() {
+    return this.couleur;
+  }
+
+  /**
+   * @return l'âge du chien
+   **/
+  public int getAge() {
+    return this.age;
+  }
+
+  /**
    * Méthode qui fait aboyer le chien
    **/
-  public static void aboyer() {
+  public void aboyer() {
     System.out.println("Ouaf!");
   }
 
   /**
    * Méthode qui fait dormir le chien
    **/
-  public static void dormir() {
+  public void dormir() {
     System.out.println("...");
-  }
-
-  /**
-   * Programme
-   * 
-   * @param args inutilisé
-   **/
-  public static void main(String[] args) {
-    Chien monChien = new Chien("Chihuahua", "Noir", 4);
-    monChien.aboyer();
   }
 }
